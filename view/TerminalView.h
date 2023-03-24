@@ -1,0 +1,14 @@
+//
+// Created by dell on 24.03.2023.
+//
+
+#ifndef DININGPHILOSOPHERS_V2_TERMINALVIEW_H
+#define DININGPHILOSOPHERS_V2_TERMINALVIEW_H
+
+
+class TerminalView {
+
+};
+
+
+#endif //DININGPHILOSOPHERS_V2_TERMINALVIEW_H

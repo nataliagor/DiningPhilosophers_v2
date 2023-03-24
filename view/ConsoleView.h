@@ -1,0 +1,14 @@
+//
+// Created by dell on 24.03.2023.
+//
+
+#ifndef DININGPHILOSOPHERS_V2_CONSOLEVIEW_H
+#define DININGPHILOSOPHERS_V2_CONSOLEVIEW_H
+
+
+class ConsoleView {
+
+};
+
+
+#endif //DININGPHILOSOPHERS_V2_CONSOLEVIEW_H
