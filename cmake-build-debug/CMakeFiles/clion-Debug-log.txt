@@ -1,0 +1,4 @@
+C:\Users\dell\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\223.8836.42\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\dell\Desktop\cc -B C:\Users\dell\Desktop\cc\cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/dell/Desktop/cc/cmake-build-debug
