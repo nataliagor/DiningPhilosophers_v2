@@ -4,33 +4,10 @@
 
 #include "EatingTable.h"
 
-EatingTable::EatingTable(IView& view) {
+EatingTable::EatingTable(IView& view, int numberOfPhilosophers) {
     this->view = view;
-    this->numberOfPhilosophers = IView::inputNumberOfPhilosophers(); //TU SIE ZATRZYMUJE
-    this->philosophers = new pthread_t[numberOfPhilosophers];
+    this->numberOfPhilosophers = numberOfPhilosophers;
     this->forks = new std::mutex[numberOfPhilosophers];
-}
-
-void EatingTable::start(){
-    createPhilosophers();
-}
-
-void EatingTable::stop(){
-    joinPhilosophers();
-}
-
-void EatingTable::createPhilosophers(){
-    int ids[numberOfPhilosophers];
-    for(int i = 0 ; i < numberOfPhilosophers; i++){
-        ids[i] = i;
-        pthread_create(&philosophers[i], NULL, &EatingTable::philosopherHelper, (void*) &ids[i]);
-    }
-}
-
-void EatingTable::joinPhilosophers(){
-    for(int i = 0 ; i < numberOfPhilosophers; i++){
-        pthread_join(philosophers[i], 0);
-    }
 }
 
 void* EatingTable::philosopher(void* value){
@@ -47,14 +24,6 @@ void* EatingTable::philosopher(void* value){
     return 0;
 }
 
-void* EatingTable::philosopherHelper(void *id){
-    return ((EatingTable *) id)->philosopher(id);
-}
-
-int EatingTable::getNumberOfPhilosophers(){
-    return numberOfPhilosophers;
-}
-
 void EatingTable::changeOfState(PhilosopherState philosopherState, int id){
     viewMutex.lock();
     view.displayState(philosopherState, id);
@@ -64,4 +33,8 @@ void EatingTable::changeOfState(PhilosopherState philosopherState, int id){
 int EatingTable::getNearPhilosopherId(int id){                   //Philosopher on the right
     if(id == numberOfPhilosophers - 1) return 0;
     return id+1;
+}
+
+void* EatingTable::philosopherHelper(void *id){
+    return ((EatingTable *) id)->philosopher(id);
 }

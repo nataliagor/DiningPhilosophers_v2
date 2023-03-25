@@ -15,16 +15,13 @@
 class EatingTable {
 
 public:
-    EatingTable(IView& view);
-    void start();
-    void stop();
+    EatingTable(IView& view, int numberOfPhilosophers);
     int getNumberOfPhilosophers();
     void createPhilosophers();
     void joinPhilosophers();
 
 //private:
     int numberOfPhilosophers;
-    pthread_t *philosophers;
     std::mutex *forks;
     std::mutex viewMutex;
     IView view;

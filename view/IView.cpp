@@ -17,13 +17,13 @@ void IView::displayHeadline(){
 void IView::displayState(PhilosopherState philosopherState, int id){
     switch(philosopherState){
         case PhilosopherState::WAITING:
-            std::cout << id + " CZEKA" << std::endl;
-            break;
-        case PhilosopherState::THINKING:
-            std::cout << id + " JE" << std::endl;
+            std::cout << id << " CZEKA" << std::endl;
             break;
         case PhilosopherState::EATING:
-            std::cout << id + " MYŚLI" << std::endl;
+            std::cout << id << " JE" << std::endl;
+            break;
+        case PhilosopherState::THINKING:
+            std::cout << id << " MYSLI" << std::endl;
             break;
         default:
             break;
