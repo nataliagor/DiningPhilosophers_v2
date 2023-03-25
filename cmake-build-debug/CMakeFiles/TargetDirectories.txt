@@ -1,3 +1,3 @@
-C:/Users/dell/Desktop/cc/cmake-build-debug/CMakeFiles/DiningPhilosophers_v2.dir
-C:/Users/dell/Desktop/cc/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/dell/Desktop/cc/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles/DiningPhilosophers_v2.dir
+/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
