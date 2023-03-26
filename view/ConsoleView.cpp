@@ -14,16 +14,16 @@ void ConsoleView::displayHeadline(){
 
 }
 
-void ConsoleView::displayState(PhilosopherState philosopherState, int id) {
+void ConsoleView::displayState(PhilosopherState philosopherState, int id, int eatingTimes, int waitingTime, int stateTime) {
     switch (philosopherState) {
         case PhilosopherState::WAITING:
-            std::cout << id << " CZEKA" << std::endl;
+            std::cout << "Filozof " << id << " czeka, jedl razy: " << eatingTimes<< std::endl;
             break;
         case PhilosopherState::EATING:
-            std::cout << id << " JE" << std::endl;
+            std::cout << "Filozof " << id << " je, jadl razy: " << eatingTimes <<  std::endl;
             break;
         case PhilosopherState::THINKING:
-            std::cout << id << " MYSLI" << std::endl;
+            std::cout << "Filozof " << id << " mysli, jadl razy: " << eatingTimes<<  std::endl;
             break;
         default:
             break;

@@ -12,7 +12,7 @@ TerminalView::TerminalView() {
 }
 
 int TerminalView::inputNumberOfPhilosophers(){
-    return 5;
+    return 0;
 }
 
 void TerminalView::displayHeadline(){
@@ -23,33 +23,34 @@ void TerminalView::displayHeadline(){
     mvprintw(0,12, "| Stan filozofa   ");
     mvprintw(0,30, "| Czas oczekiwania ");
     mvprintw(0,49, "| Ilosc zjedzonych posilkow ");
-    mvprintw(0,77, "| Poziom stresu ");
+    mvprintw(0,77, "| Czas jedzenia ");
+    mvprintw(0,93, "| Czas myslenia ");
 
     attroff(A_BOLD);
     attroff(COLOR_PAIR(1));
     refresh();
 }
 
-void TerminalView::displayState(PhilosopherState philosopherState, int id) {
-    if(id%2 == 0)  attron(COLOR_PAIR(1));
-    else attron(COLOR_PAIR(0));
+void TerminalView::displayState(PhilosopherState philosopherState, int id, int eatingTimes, int waitingTime, int stateTime) {
+    if(id%2 == 0)  attron(COLOR_PAIR(0));
+    else attron(COLOR_PAIR(1));
 
     switch (philosopherState) {
         case PhilosopherState::WAITING:
-            mvprintw(id+1,0, "Filozof %d  | Czeka przy stole |                  |                           |               ", id);
+            mvprintw(id+1,0, "Filozof %d  | czeka przy stole |         %7ds |                   %7d |               |               ", id, waitingTime, eatingTimes);
             break;
         case PhilosopherState::EATING:
-            mvprintw(id+1,0, "Filozof %d  |   je posilek     |                  |                           |               ", id);
+            mvprintw(id+1,0, "Filozof %d  |   je posilek     |         %7ds |                   %7d |       %7d |               ", id, waitingTime, eatingTimes, stateTime);
             break;
         case PhilosopherState::THINKING:
-            mvprintw(id+1,0, "Filozof %d  |      mysli       |                  |                           |               ", id);
+            mvprintw(id+1,0, "Filozof %d  |      mysli       |         %7ds |                   %7d |               |       %7d ", id, waitingTime, eatingTimes, stateTime);
             break;
         default:
             break;
     }
 
-    if(id%2 == 0)  attroff(COLOR_PAIR(1));
-    else attroff(COLOR_PAIR(0));
+    if(id%2 == 0)  attroff(COLOR_PAIR(0));
+    else attroff(COLOR_PAIR(1));
     refresh();
 }
 

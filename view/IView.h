@@ -12,7 +12,7 @@ class IView {
 public:
     virtual int inputNumberOfPhilosophers() = 0;
     virtual void displayHeadline() = 0;
-    virtual void displayState(PhilosopherState philosopherState, int id) = 0;
+    virtual void displayState(PhilosopherState philosopherState, int id, int eatingTimes, int waitingTime, int stateTime) = 0;
     virtual bool exitView() = 0;
 
 };
