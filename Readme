@@ -1,0 +1,3 @@
+g++ main.cpp view/TerminalView.cpp view/ConsoleView.cpp -o main -lncurses
+./main
+
