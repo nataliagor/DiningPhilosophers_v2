@@ -10,10 +10,6 @@ int ConsoleView::inputNumberOfPhilosophers(){
     return x;
 }
 
-void ConsoleView::displayHeadline(){
-
-}
-
 void ConsoleView::displayState(PhilosopherState philosopherState, int id, int eatingTimes, int waitingTime, int stateTime) {
     switch (philosopherState) {
         case PhilosopherState::WAITING:
@@ -30,6 +26,11 @@ void ConsoleView::displayState(PhilosopherState philosopherState, int id, int ea
     }
 }
 
-bool ConsoleView::exitView(){
-    return true;
+void ConsoleView::exitView(){
+    std::cout << "ConsoleView::exitView -> brak inplemetacji" << std::endl;
+}
+
+bool ConsoleView::exitCondition(){
+    std::cout << "ConsoleView::exitCondition -> brak inplemetacji" << std::endl;
+    return false;
 }

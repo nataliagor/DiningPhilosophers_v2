@@ -6,9 +6,9 @@
 
 TerminalView::TerminalView() {
     initscr();
-    start_color();
-    init_pair(0,COLOR_GREEN,COLOR_BLACK);
-    init_pair(1,COLOR_BLACK,COLOR_GREEN);
+    initializeColors();
+    displayHeadline();
+    displayExitCondition();
 }
 
 int TerminalView::inputNumberOfPhilosophers(){
@@ -54,8 +54,26 @@ void TerminalView::displayState(PhilosopherState philosopherState, int id, int e
     refresh();
 }
 
-bool TerminalView::exitView(){
+void TerminalView::exitView(){
+    endwin();
+}
 
+bool TerminalView::exitCondition(){
+    noecho();
+    if(int esc=getch() != 27) return false;
     return true;
 }
+
+void TerminalView::displayExitCondition(){
+    mvprintw(20,0, "Press ESC to exit ...");
+    refresh();
+}
+
+void TerminalView::initializeColors(){
+    start_color();
+    init_pair(0,COLOR_GREEN,COLOR_BLACK);
+    init_pair(1,COLOR_BLACK,COLOR_GREEN);
+}
+
+
 

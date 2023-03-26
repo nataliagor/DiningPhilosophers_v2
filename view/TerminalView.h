@@ -15,9 +15,12 @@ public:
 
 private:
     virtual int inputNumberOfPhilosophers();
-    virtual void displayHeadline();
     virtual void displayState(PhilosopherState philosopherState, int id, int eatingTimes, int waitingTime, int stateTime);
-    virtual bool exitView();
+    virtual void exitView();
+    virtual bool exitCondition();
+    virtual void displayHeadline();
+    virtual void displayExitCondition();
+    virtual void initializeColors();
 };
 
 
