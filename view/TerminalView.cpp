@@ -32,7 +32,7 @@ void TerminalView::displayHeadline(){
 }
 
 void TerminalView::displayState(PhilosopherState philosopherState, int id, int eatingTimes, int waitingTime, int stateTime) {
-    if(id%2 == 0)  attron(COLOR_PAIR(0));
+    if(id%2 == 0)  attron(COLOR_PAIR(2));
     else attron(COLOR_PAIR(1));
 
     switch (philosopherState) {
@@ -49,7 +49,7 @@ void TerminalView::displayState(PhilosopherState philosopherState, int id, int e
             break;
     }
 
-    if(id%2 == 0)  attroff(COLOR_PAIR(0));
+    if(id%2 == 0)  attroff(COLOR_PAIR(2));
     else attroff(COLOR_PAIR(1));
     refresh();
 }
@@ -73,6 +73,7 @@ void TerminalView::initializeColors(){
     start_color();
     init_pair(0,COLOR_GREEN,COLOR_BLACK);
     init_pair(1,COLOR_BLACK,COLOR_GREEN);
+    init_pair(2,COLOR_BLACK,COLOR_MAGENTA);
 }
 
 
