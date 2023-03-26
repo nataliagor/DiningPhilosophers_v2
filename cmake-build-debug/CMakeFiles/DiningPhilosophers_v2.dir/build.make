@@ -83,24 +83,10 @@ CMakeFiles/DiningPhilosophers_v2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiningPhilosophers_v2.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natalia/CLionProjects/DiningPhilosophers_v2/main.cpp -o CMakeFiles/DiningPhilosophers_v2.dir/main.cpp.s
 
-CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.o: CMakeFiles/DiningPhilosophers_v2.dir/flags.make
-CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.o: /home/natalia/CLionProjects/DiningPhilosophers_v2/view/IView.cpp
-CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.o: CMakeFiles/DiningPhilosophers_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.o -MF CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.o.d -o CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.o -c /home/natalia/CLionProjects/DiningPhilosophers_v2/view/IView.cpp
-
-CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natalia/CLionProjects/DiningPhilosophers_v2/view/IView.cpp > CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.i
-
-CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natalia/CLionProjects/DiningPhilosophers_v2/view/IView.cpp -o CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.s
-
 CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o: CMakeFiles/DiningPhilosophers_v2.dir/flags.make
 CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o: /home/natalia/CLionProjects/DiningPhilosophers_v2/view/ConsoleView.cpp
 CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o: CMakeFiles/DiningPhilosophers_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o -MF CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o.d -o CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o -c /home/natalia/CLionProjects/DiningPhilosophers_v2/view/ConsoleView.cpp
 
 CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.s: cmake_force
 CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o: CMakeFiles/DiningPhilosophers_v2.dir/flags.make
 CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o: /home/natalia/CLionProjects/DiningPhilosophers_v2/view/TerminalView.cpp
 CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o: CMakeFiles/DiningPhilosophers_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o -MF CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o.d -o CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o -c /home/natalia/CLionProjects/DiningPhilosophers_v2/view/TerminalView.cpp
 
 CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.i: cmake_force
@@ -125,39 +111,21 @@ CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natalia/CLionProjects/DiningPhilosophers_v2/view/TerminalView.cpp -o CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.s
 
-CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.o: CMakeFiles/DiningPhilosophers_v2.dir/flags.make
-CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.o: /home/natalia/CLionProjects/DiningPhilosophers_v2/EatingTable.cpp
-CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.o: CMakeFiles/DiningPhilosophers_v2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.o -MF CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.o.d -o CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.o -c /home/natalia/CLionProjects/DiningPhilosophers_v2/EatingTable.cpp
-
-CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/natalia/CLionProjects/DiningPhilosophers_v2/EatingTable.cpp > CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.i
-
-CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/natalia/CLionProjects/DiningPhilosophers_v2/EatingTable.cpp -o CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.s
-
 # Object files for target DiningPhilosophers_v2
 DiningPhilosophers_v2_OBJECTS = \
 "CMakeFiles/DiningPhilosophers_v2.dir/main.cpp.o" \
-"CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.o" \
 "CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o" \
-"CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o" \
-"CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.o"
+"CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o"
 
 # External object files for target DiningPhilosophers_v2
 DiningPhilosophers_v2_EXTERNAL_OBJECTS =
 
 DiningPhilosophers_v2: CMakeFiles/DiningPhilosophers_v2.dir/main.cpp.o
-DiningPhilosophers_v2: CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.o
 DiningPhilosophers_v2: CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o
 DiningPhilosophers_v2: CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o
-DiningPhilosophers_v2: CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.o
 DiningPhilosophers_v2: CMakeFiles/DiningPhilosophers_v2.dir/build.make
 DiningPhilosophers_v2: CMakeFiles/DiningPhilosophers_v2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable DiningPhilosophers_v2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/natalia/CLionProjects/DiningPhilosophers_v2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DiningPhilosophers_v2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DiningPhilosophers_v2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

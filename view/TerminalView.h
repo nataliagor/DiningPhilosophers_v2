@@ -5,9 +5,19 @@
 #ifndef DININGPHILOSOPHERS_V2_TERMINALVIEW_H
 #define DININGPHILOSOPHERS_V2_TERMINALVIEW_H
 
+#include "ncurses.h"
+#include <string>
+#include "IView.h"
 
-class TerminalView {
+class TerminalView : public IView {
+public:
+    TerminalView();
 
+private:
+    virtual int inputNumberOfPhilosophers();
+    virtual void displayHeadline();
+    virtual void displayState(PhilosopherState philosopherState, int id);
+    virtual bool exitView();
 };
 
 

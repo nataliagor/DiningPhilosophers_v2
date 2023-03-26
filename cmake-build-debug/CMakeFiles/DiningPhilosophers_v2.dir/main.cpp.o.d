@@ -192,4 +192,7 @@ CMakeFiles/DiningPhilosophers_v2.dir/main.cpp.o: \
  /home/natalia/CLionProjects/DiningPhilosophers_v2/view/IView.h \
  /home/natalia/CLionProjects/DiningPhilosophers_v2/view/../PhilosopherState.h \
  /home/natalia/CLionProjects/DiningPhilosophers_v2/view/ConsoleView.h \
- /home/natalia/CLionProjects/DiningPhilosophers_v2/view/TerminalView.h
+ /home/natalia/CLionProjects/DiningPhilosophers_v2/view/IView.h \
+ /home/natalia/CLionProjects/DiningPhilosophers_v2/view/TerminalView.h \
+ /usr/include/curses.h /usr/include/ncurses_dll.h /usr/include/unctrl.h \
+ /usr/include/curses.h

@@ -18,16 +18,16 @@ IView* view;
 void* philosopher(void* value);
 void changeOfState(PhilosopherState philosopherState, int id);
 int getNearPhilosopherId(int id);
+void viewHandler();
 
 int main() {
-    view = new IView();
-
+    viewHandler();                                                                                              //widok
     int ids[numberOfPhilosophers];
-    for(int i = 0 ; i < numberOfPhilosophers; i++){
+    for(int i = 0 ; i < numberOfPhilosophers; i++){                                                             //tworzenie watkow
         ids[i] = i;
         pthread_create(&philosophers[i], NULL, philosopher, (void*) &ids[i]);
     }
-    for(int i = 0 ; i < numberOfPhilosophers; i++){
+    for(int i = 0 ; i < numberOfPhilosophers; i++){                                                             //laczenie watow
         pthread_join(philosophers[i], 0);
     }
 
@@ -58,4 +58,10 @@ void changeOfState(PhilosopherState philosopherState, int id){
 int getNearPhilosopherId(int id){                   //Philosopher on the right
     if(id == numberOfPhilosophers - 1) return 0;
     return id+1;
+}
+
+void viewHandler(){
+    view = new TerminalView();
+    view->displayHeadline();
+    view->exitView();
 }

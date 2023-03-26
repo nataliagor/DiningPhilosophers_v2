@@ -129,30 +129,6 @@ DiningPhilosophers_v2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiningPhilosophers_v2.dir/build.make CMakeFiles/DiningPhilosophers_v2.dir/build
 .PHONY : DiningPhilosophers_v2/fast
 
-EatingTable.o: EatingTable.cpp.o
-.PHONY : EatingTable.o
-
-# target to build an object file
-EatingTable.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiningPhilosophers_v2.dir/build.make CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.o
-.PHONY : EatingTable.cpp.o
-
-EatingTable.i: EatingTable.cpp.i
-.PHONY : EatingTable.i
-
-# target to preprocess a source file
-EatingTable.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiningPhilosophers_v2.dir/build.make CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.i
-.PHONY : EatingTable.cpp.i
-
-EatingTable.s: EatingTable.cpp.s
-.PHONY : EatingTable.s
-
-# target to generate assembly for a file
-EatingTable.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiningPhilosophers_v2.dir/build.make CMakeFiles/DiningPhilosophers_v2.dir/EatingTable.cpp.s
-.PHONY : EatingTable.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -201,30 +177,6 @@ view/ConsoleView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiningPhilosophers_v2.dir/build.make CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.s
 .PHONY : view/ConsoleView.cpp.s
 
-view/IView.o: view/IView.cpp.o
-.PHONY : view/IView.o
-
-# target to build an object file
-view/IView.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiningPhilosophers_v2.dir/build.make CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.o
-.PHONY : view/IView.cpp.o
-
-view/IView.i: view/IView.cpp.i
-.PHONY : view/IView.i
-
-# target to preprocess a source file
-view/IView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiningPhilosophers_v2.dir/build.make CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.i
-.PHONY : view/IView.cpp.i
-
-view/IView.s: view/IView.cpp.s
-.PHONY : view/IView.s
-
-# target to generate assembly for a file
-view/IView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DiningPhilosophers_v2.dir/build.make CMakeFiles/DiningPhilosophers_v2.dir/view/IView.cpp.s
-.PHONY : view/IView.cpp.s
-
 view/TerminalView.o: view/TerminalView.cpp.o
 .PHONY : view/TerminalView.o
 
@@ -258,18 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DiningPhilosophers_v2"
-	@echo "... EatingTable.o"
-	@echo "... EatingTable.i"
-	@echo "... EatingTable.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... view/ConsoleView.o"
 	@echo "... view/ConsoleView.i"
 	@echo "... view/ConsoleView.s"
-	@echo "... view/IView.o"
-	@echo "... view/IView.i"
-	@echo "... view/IView.s"
 	@echo "... view/TerminalView.o"
 	@echo "... view/TerminalView.i"
 	@echo "... view/TerminalView.s"

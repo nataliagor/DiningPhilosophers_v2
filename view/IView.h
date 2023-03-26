@@ -10,12 +10,11 @@
 
 class IView {
 public:
-    static int inputNumberOfPhilosophers();
-    void displayHeadline();
-    void displayState(PhilosopherState philosopherState, int id);
-    bool exitView();
+    virtual int inputNumberOfPhilosophers() = 0;
+    virtual void displayHeadline() = 0;
+    virtual void displayState(PhilosopherState philosopherState, int id) = 0;
+    virtual bool exitView() = 0;
 
-private:
 };
 
 
