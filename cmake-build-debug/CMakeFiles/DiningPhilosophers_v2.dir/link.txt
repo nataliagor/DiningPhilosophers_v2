@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/DiningPhilosophers_v2.dir/main.cpp.o CMakeFiles/DiningPhilosophers_v2.dir/view/ConsoleView.cpp.o CMakeFiles/DiningPhilosophers_v2.dir/view/TerminalView.cpp.o -o DiningPhilosophers_v2 
