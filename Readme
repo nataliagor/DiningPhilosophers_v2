@@ -1,3 +1,15 @@
 g++ main.cpp view/TerminalView.cpp view/ConsoleView.cpp -o main -lncurses
 ./main
 
+
+Wstęp:
+Zadanie zostało zrealizowane w języku C++, a wizualna prezentacja projektu została opracowana za pomocą biblioteki ncurses dostępnej na systemie Linux.
+
+Opis realizacji problemu:
+Problem ucztujących filozofów polega na synchronizacji dostępu wątków (filozofów) do zasobów współdzielonych (widelców), w taki sposób by uniknąć zakleszczeń oraz zagłodzenia filozofów.  Każdy z filozofów przynosi do stołu swój widelec. Aby zjeść posiłek filozof musi pożyczyć drugi widelec od sąsiada. Po zjedzeniu filozof zwalnia oba widelce i przechodzi do myślenia, następnie przechodzi do ponownej próby pozyskania widelców. 
+W projekcie założono, że:
++	Każdy z filozofów posiada swój widelec, drugi pożycza od prawego sąsiada
++	Każdy z filozofów jest osobnym wątkiem, a każdy z widelców osobnym mutexem
++	Filozof może przyjąć trzy stany: spożywania posiłku, czekania na dostępność widelców i myślenia
++	Możliwa jest różna ilość filozofów
+
